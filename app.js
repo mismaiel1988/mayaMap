@@ -61,4 +61,4 @@ app.get("/records", function(req, res) {
 // 	console.log(data)
 // });
 
-app.listen(3000, function() { console.log('listening')});
+app.listen(process.env.PORT || 3000, function() { console.log('listening')});
