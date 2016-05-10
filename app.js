@@ -24,7 +24,7 @@ PostSchema = new Schema({
 
 var Post = mongoose.model('Post', PostSchema);
 
-app.use('/', express.static(__dirname + 'http://piedparker.herokuapp.com/public'));
+app.use('/', express.static(__dirname + 'http://piedparker.herokuapp.com'));
 
 app.post('/update', function(req, res){
   
