@@ -1,0 +1,35 @@
+html,body{
+	height: 100%
+}
+#map{
+	height: 100%;
+	width: 50%;
+	display:inline-block;
+}
+.posBtn{
+	padding: 7px 15px;
+	background: rgba(173,216,230,.8);;
+	border:none;
+	color: rgba(0,0,0,.8);
+	cursor: pointer;
+	&:hover{
+		background: rgba(173,216,230,1);
+		color: black;
+
+	}
+
+}
+.record{
+	padding: 10px;
+	&:nth-child(even){
+		background: lightgrey;
+	}
+}
+.records{
+	vertical-align: top;
+	display:inline-block;
+	width: 360px;
+	height: 100%;
+	margin-left: 20px;
+	overflow-y: scroll;
+}
