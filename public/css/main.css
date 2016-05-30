@@ -1,32 +1,46 @@
 html, body {
-  height: 100%; }
+  height: 100%; 
+}
 
 #map {
   height: 100%;
   width: 50%;
-  display: inline-block; }
+  display: inline-block; 
+}
 
 .posBtn {
+  display: inline-block;
   padding: 7px 15px;
   background: rgba(173, 216, 230, 0.8);
   border: none;
   color: rgba(0, 0, 0, 0.8);
-  cursor: pointer; }
+  cursor: pointer;
+  margin-left: 36%;
+  margin-top: 50px; 
+}
   .posBtn:hover {
     background: lightblue;
-    color: black; }
+    color: black; 
+  }
 
 .record {
-  padding: 10px; }
+  padding: 10px; 
+}
   .record:nth-child(even) {
-    background: lightgrey; }
+    background: lightgrey; 
+  }
 
-.records {
+.rightSide {
   vertical-align: top;
   display: inline-block;
   width: 360px;
   height: 100%;
-  margin-left: 20px;
-  overflow-y: scroll; }
+  margin-left: 20px; 
+}
+
+.records {
+  height: 50%;
+  overflow-y: scroll; 
+}
 
 /*# sourceMappingURL=main.css.map */

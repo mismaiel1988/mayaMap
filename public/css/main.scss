@@ -1,35 +1,40 @@
-html,body{
-	height: 100%
+html, body {
+	height: 100%;
 }
-#map{
+#map {
 	height: 100%;
 	width: 50%;
-	display:inline-block;
+	display: inline-block;
 }
-.posBtn{
+.posBtn {
+	display: inline-block;
 	padding: 7px 15px;
-	background: rgba(173,216,230,.8);;
-	border:none;
+	background: rgba(173,216,230,.8);
+	border: none;
 	color: rgba(0,0,0,.8);
 	cursor: pointer;
-	&:hover{
-		background: rgba(173,216,230,1);
-		color: black;
-
+	margin-left: 36%;
+	margin-top: 50px;
+	&:hover {
+	background: rgba(173,216,230,1);
+	color: black;
 	}
-
 }
-.record{
+.record {
 	padding: 10px;
-	&:nth-child(even){
+		&:nth-child(even){
 		background: lightgrey;
 	}
 }
-.records{
+.rightSide {
 	vertical-align: top;
-	display:inline-block;
+	display: inline-block;
 	width: 360px;
 	height: 100%;
 	margin-left: 20px;
+
+}
+.records{
+	height: 50%;
 	overflow-y: scroll;
 }

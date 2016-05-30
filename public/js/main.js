@@ -17,7 +17,7 @@ if (navigator.geolocation) {
 
     infoWindow.setPosition(pos);
 
-    infoWindow.setContent("<button class=\"posBtn\">Record Current Location</button>");
+    infoWindow.setContent("You are here");
 
     map.setCenter(pos);
 	
@@ -117,6 +117,5 @@ $.get( "/records", function(data) {
 
   
 });
-
 
 initMap();

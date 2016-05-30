@@ -56,6 +56,7 @@ app.get("/records", function(req, res) {
 });
 
 
+
 // app.get('/records', function(req, res){
 // 	var data = db.locations.find();
 // 	console.log(data)
