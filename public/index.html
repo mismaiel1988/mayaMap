@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<title>Location Map</title>
 </head>
 <body>
+<input type="hidden" name="user" value="" class="user">
+<div class="wrapper">
 
-<div id="map"></div>
-<div class="rightSide">
-<div class="records"></div>
-<a href="javascript:location.reload(true)"><button class="posBtn">Click Here</button>	
-</a>
-</div>
+	<div class="loginForm">
+		<label>Enter Username</label>
+		<input class="username" name="username" type="text" placeholder="Enter Username"></input>
+		<label>Enter Password</label>
+		<input class="password" name="password" type="password" placeholder="Enter Password"></input>
+		<button class="login" onclick="login()">Enter Pied Parker</button>
+		<button class="createAccount" onclick="createAccount()">I'm New</button>
+	</div>
 
-
-
-
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtCYCGTbYGU1Hj49ZdNNGhFs6CtcrM56A"></script>
-<script src="js/main.js"></script>
-
-</html>
+	<div class="mapContainer hidden">
+		<div id="map"></div>
+		<div class="rightSide">
+			<div class="records"></div>
+			<button class="posBtn">Click Here</button>
+		</div>
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtCYCGTbYGU1Hj49ZdNNGhFs6CtcrM56A"></script>
+	<script src="js/main.js"></script>
+	</body>
+	</html>

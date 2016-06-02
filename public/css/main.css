@@ -1,12 +1,10 @@
 html, body {
-  height: 100%; 
-}
+  height: 100%; }
 
 #map {
-  height: 100%;
+  height: 50%;
   width: 50%;
-  display: inline-block; 
-}
+  display: inline-block; }
 
 .posBtn {
   display: inline-block;
@@ -16,31 +14,59 @@ html, body {
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   margin-left: 36%;
-  margin-top: 50px; 
-}
+  margin-top: 50px;
+  border-radius: 11px; }
   .posBtn:hover {
     background: lightblue;
-    color: black; 
-  }
+    color: black; }
 
 .record {
-  padding: 10px; 
-}
+  padding: 10px; }
   .record:nth-child(even) {
-    background: lightgrey; 
-  }
+    background: lightgrey; }
 
 .rightSide {
   vertical-align: top;
   display: inline-block;
   width: 360px;
-  height: 100%;
-  margin-left: 20px; 
-}
+  height: 50%;
+  margin-left: 20px; }
 
 .records {
-  height: 50%;
-  overflow-y: scroll; 
-}
+  height: 80%;
+  overflow-y: scroll; }
+
+.hidden {
+  display: none; }
+
+.wrapper, .mapContainer {
+  width: 100%;
+  height: 100%; }
+
+.loginForm {
+  font-family: "Helvetica Neue";
+  width: 300px;
+  margin: auto;
+  margin-top: 100px; }
+  .loginForm input {
+    font-size: 16px;
+    display: block;
+    width: 96%;
+    height: 24px;
+    padding-left: 6px;
+    margin-bottom: 10px; }
+  .loginForm label {
+    display: block;
+    width: 100%; }
+  .loginForm button {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    border: none; }
+    .loginForm button.createAccount {
+      border: 1px solid blue;
+      background: none;
+      margin-top: 10px; }
 
 /*# sourceMappingURL=main.css.map */
