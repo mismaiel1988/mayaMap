@@ -2,23 +2,24 @@ html, body {
   height: 100%; }
 
 #map {
-  height: 50%;
+  height: 88%;
+  margin-bottom: 10%;
   width: 50%;
   display: inline-block; }
 
 .posBtn {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  font-size: 24px;
+  width: 100%;
+  z-index: 1000;
   display: inline-block;
-  padding: 7px 15px;
-  background: rgba(173, 216, 230, 0.8);
+  padding: 17px 15px;
+  background: lightblue;
   border: none;
   color: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  margin-left: 36%;
-  margin-top: 50px;
-  border-radius: 11px; }
-  .posBtn:hover {
-    background: lightblue;
-    color: black; }
+  cursor: pointer; }
 
 .record {
   padding: 10px; }
@@ -29,12 +30,15 @@ html, body {
   vertical-align: top;
   display: inline-block;
   width: 360px;
-  height: 50%;
+  height: 88%;
+  margin-bottom: 10%;
+  width: 47%;
+  display: inline-block;
   margin-left: 20px; }
 
 .records {
-  height: 80%;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  height: 100%; }
 
 .hidden {
   display: none; }
@@ -68,5 +72,838 @@ html, body {
       border: 1px solid blue;
       background: none;
       margin-top: 10px; }
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  s#map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #map {
+    height: 50%;
+    width: 50%;
+    display: inline-block; }
+
+  .posBtn {
+    display: inline-block;
+    padding: 7px 15px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 50px;
+    border-radius: 11px; }
+    .posBtn:hover {
+      background: lightblue;
+      color: black; }
+
+  .record {
+    padding: 10px; }
+    .record:nth-child(even) {
+      background: lightgrey; }
+
+  .rightSide {
+    vertical-align: top;
+    display: inline-block;
+    width: 360px;
+    height: 50%;
+    margin-left: 20px; }
+
+  .records {
+    height: 80%;
+    overflow-y: scroll; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper, .mapContainer {
+    width: 100%;
+    height: 100%; }
+
+  .loginForm {
+    font-family: "Helvetica Neue";
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    .loginForm input {
+      font-size: 16px;
+      display: block;
+      width: 96%;
+      height: 24px;
+      padding-left: 6px;
+      margin-bottom: 10px; }
+    .loginForm label {
+      display: block;
+      width: 100%; }
+    .loginForm button {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      border: none; }
+      .loginForm button.createAccount {
+        border: 1px solid blue;
+        background: none;
+        margin-top: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
