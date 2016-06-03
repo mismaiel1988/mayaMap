@@ -61,15 +61,16 @@ html, body {
     margin-bottom: 10px; }
   .loginForm label {
     display: block;
-    width: 100%; }
+    width: 100%;
+    font-size: 10px; }
   .loginForm button {
     font-size: 16px;
     width: 100%;
     padding: 10px;
-    background: blue;
+    background: lightblue;
     border: none; }
     .loginForm button.createAccount {
-      border: 1px solid blue;
+      border: 1px solid lightblue;
       background: none;
       margin-top: 10px; }
 

@@ -184,8 +184,6 @@ function createAndEnter() {
 }
 
 
-
-
 $(document).on('click', '.delete', function(e){
 	e.preventDefault();
 	var parent = $(this).parent('.record');
