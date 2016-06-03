@@ -4,7 +4,9 @@
   "description": "none",
   "main": "server.js",
   "scripts": {
-  "start": "node server.js"
+  "start": "node server.js",
+  "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+  "heroku-postbuild": "echo This runs afterwards."
 },
   "dependencies": {
     "body-parser": "^1.15.1",
