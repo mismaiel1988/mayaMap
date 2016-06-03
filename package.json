@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "none",
   "main": "server.js",
+  "scripts": {
+  "start": "node server.js"
+},
   "dependencies": {
     "body-parser": "^1.15.1",
-    "ejs": "^2.4.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "mongodb": "^2.0.55",
