@@ -32,8 +32,8 @@ app.post('/update', function(req, res){
   
 	
 	var mypost = new Post()
-  mypost.userId = req.body.userId;
-      mypost.elev = req.body.elev
+    mypost.userId = req.body.userId;
+    mypost.elev = req.body.elev
 		mypost.lat = req.body.lat
 		mypost.long = req.body.long
 		mypost.address = req.body.address
@@ -43,7 +43,6 @@ app.post('/update', function(req, res){
 	    mypost.save()
 	  }
 	);
-    //console.log(mypost.id);
 
   res.send(JSON.stringify({id:mypost.id}));
 
@@ -53,11 +52,14 @@ app.post('/delete', function(req, res){
   var id = req.body.id;
   console.log('id is: '+id);
   Post.findByIdAndRemove(id).exec();
-  var deleted=  true;/*  var post = Post.find({id: id});
+  var deleted=  true;
+/*  
+  var post = Post.find({id: id});
   if(post.remove())
     deleted = true;
   else 
-    deleted = false;*/
+    deleted = false;
+*/
     res.send( JSON.stringify({success: deleted}));
 });
 
@@ -67,11 +69,9 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname+'/public/index.html'));
 });
 
-
 app.get('/newUser', function(req, res){
   res.sendFile(path.join(__dirname+'/public/new.html'));
 });
-
 
 UserSchema = new Schema({
   username: String,
@@ -111,9 +111,7 @@ app.post('/login', function(req, res){
   })
 });
 
-
 app.get("/records", function(req, res) {
-
        Post.find({userId : req.query.userId},function(err, data) {
         if (err) {
             console.log('error'+err);
@@ -125,12 +123,9 @@ app.get("/records", function(req, res) {
     });
 });
 
-
-
 // app.get('/records', function(req, res){
 // 	var data = db.locations.find();
 // 	console.log(data)
 // });
 
 app.listen(process.env.PORT || 3000);
-
