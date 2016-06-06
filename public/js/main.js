@@ -32,6 +32,10 @@ function initMap() {
 	  }, function() {
 	    handleLocationError(true, infoWindow, map.getCenter());
 	  });
+//adding watchPosition
+
+//ending of watchPosition
+
 		} else {
 		  // Browser doesn't support Geolocation
 		  handleLocationError(false, infoWindow, map.getCenter());
