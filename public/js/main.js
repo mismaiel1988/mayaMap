@@ -32,14 +32,19 @@ function initMap() {
 	  }, function() {
 	    handleLocationError(true, infoWindow, map.getCenter());
 	  });
-//adding watchPosition
 
-//ending of watchPosition
 
 		} else {
 		  // Browser doesn't support Geolocation
 		  handleLocationError(false, infoWindow, map.getCenter());
 	}
+	//adding watchPosition
+	    navigator.geolocation.watchPosition(function(pos) {
+	    maximumAge: 1000,
+	    timeout: 300000,
+  		enableHighAccuracy: true
+	  	});
+	//ending of watchPosition
 }
 
 
