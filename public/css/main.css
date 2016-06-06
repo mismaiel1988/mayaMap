@@ -612,7 +612,7 @@ html, body {
   font-family: "Helvetica Neue";
   width: 300px;
   margin: auto;
-  margin-top: 50%; }
+  margin-top: 25%; }
   .loginForm input {
     font-size: 16px;
     display: block;
