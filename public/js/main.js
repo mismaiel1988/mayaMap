@@ -7,7 +7,7 @@ function initMap() {
 
 	if (navigator.geolocation) {
 
-	  navigator.geolocation.getCurrentPosition(function(position) {
+	  navigator.geolocation.watchPosition(function(position) {
 	    
 	    var pos = {
 	      lat: position.coords.latitude,
