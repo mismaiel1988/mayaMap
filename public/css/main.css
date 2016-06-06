@@ -75,90 +75,22 @@ html, body {
       margin-top: 10px; }
 
 /* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  s#map {
-    height: 50%;
-    width: 50%;
-    display: inline-block; }
-
-  .posBtn {
-    display: inline-block;
-    padding: 7px 15px;
-    background: rgba(173, 216, 230, 0.8);
-    border: none;
-    color: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    margin-left: 36%;
-    margin-top: 50px;
-    border-radius: 11px; }
-    .posBtn:hover {
-      background: lightblue;
-      color: black; }
-
-  .record {
-    padding: 10px; }
-    .record:nth-child(even) {
-      background: lightgrey; }
-
-  .rightSide {
-    vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
-
-  .records {
-    height: 80%;
-    overflow-y: scroll; }
-
-  .hidden {
-    display: none; }
-
-  .wrapper, .mapContainer {
-    width: 100%;
-    height: 100%; }
-
-  .loginForm {
-    font-family: "Helvetica Neue";
-    width: 300px;
-    margin: auto;
-    margin-top: 100px; }
-    .loginForm input {
-      font-size: 16px;
-      display: block;
-      width: 96%;
-      height: 24px;
-      padding-left: 6px;
-      margin-bottom: 10px; }
-    .loginForm label {
-      display: block;
-      width: 100%; }
-    .loginForm button {
-      font-size: 16px;
-      width: 100%;
-      padding: 10px;
-      background: blue;
-      border: none; }
-      .loginForm button.createAccount {
-        border: 1px solid blue;
-        background: none;
-        margin-top: 10px; } }
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #map {
-    height: 50%;
-    width: 50%;
-    display: inline-block; }
+    height: 45%;
+    width: 100%;
+    display: block; }
 
   .posBtn {
-    display: inline-block;
+    display: block;
     padding: 7px 15px;
+    height: 126px;
     background: rgba(173, 216, 230, 0.8);
     border: none;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    margin-left: 36%;
+    margin-left: 0;
     margin-top: 50px;
     border-radius: 11px; }
     .posBtn:hover {
@@ -172,10 +104,10 @@ html, body {
 
   .rightSide {
     vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
+    display: block;
+    width: 100%;
+    height: 40%;
+    margin: 10px; }
 
   .records {
     height: 80%;
@@ -191,8 +123,9 @@ html, body {
   .loginForm {
     font-family: "Helvetica Neue";
     width: 300px;
+    height: 50%;
     margin: auto;
-    margin-top: 100px; }
+    margin-top: 50%; }
     .loginForm input {
       font-size: 16px;
       display: block;
@@ -207,27 +140,28 @@ html, body {
       font-size: 16px;
       width: 100%;
       padding: 10px;
-      background: blue;
+      background: #add8e6;
       border: none; }
       .loginForm button.createAccount {
-        border: 1px solid blue;
+        border: 1px solid #add8e6;
         background: none;
         margin-top: 10px; } }
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   #map {
-    height: 50%;
-    width: 50%;
-    display: inline-block; }
+    height: 450%;
+    width: 100%;
+    display: block; }
 
   .posBtn {
-    display: inline-block;
+    display: block;
+    height: 126px;
     padding: 7px 15px;
     background: rgba(173, 216, 230, 0.8);
     border: none;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    margin-left: 36%;
+    margin-left: 0;
     margin-top: 50px;
     border-radius: 11px; }
     .posBtn:hover {
@@ -241,10 +175,10 @@ html, body {
 
   .rightSide {
     vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
+    display: block;
+    width: 100%;
+    height: 30%;
+    margin-left: 10px; }
 
   .records {
     height: 80%;
@@ -283,92 +217,24 @@ html, body {
         background: none;
         margin-top: 10px; } }
 /* ----------- iPhone 5 and 5S ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  #map {
-    height: 50%;
-    width: 50%;
-    display: inline-block; }
-
-  .posBtn {
-    display: inline-block;
-    padding: 7px 15px;
-    background: rgba(173, 216, 230, 0.8);
-    border: none;
-    color: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    margin-left: 36%;
-    margin-top: 50px;
-    border-radius: 11px; }
-    .posBtn:hover {
-      background: lightblue;
-      color: black; }
-
-  .record {
-    padding: 10px; }
-    .record:nth-child(even) {
-      background: lightgrey; }
-
-  .rightSide {
-    vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
-
-  .records {
-    height: 80%;
-    overflow-y: scroll; }
-
-  .hidden {
-    display: none; }
-
-  .wrapper, .mapContainer {
-    width: 100%;
-    height: 100%; }
-
-  .loginForm {
-    font-family: "Helvetica Neue";
-    width: 300px;
-    margin: auto;
-    margin-top: 100px; }
-    .loginForm input {
-      font-size: 16px;
-      display: block;
-      width: 96%;
-      height: 24px;
-      padding-left: 6px;
-      margin-bottom: 10px; }
-    .loginForm label {
-      display: block;
-      width: 100%; }
-    .loginForm button {
-      font-size: 16px;
-      width: 100%;
-      padding: 10px;
-      background: blue;
-      border: none; }
-      .loginForm button.createAccount {
-        border: 1px solid blue;
-        background: none;
-        margin-top: 10px; } }
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #map {
-    height: 50%;
-    width: 50%;
-    display: inline-block; }
+    height: 45%;
+    width: 100%;
+    display: block; }
 
   .posBtn {
-    display: inline-block;
+    display: block;
     padding: 7px 15px;
     background: rgba(173, 216, 230, 0.8);
     border: none;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    margin-left: 36%;
+    margin-left: 0;
     margin-top: 50px;
-    border-radius: 11px; }
+    border-radius: 11px;
+    height: 126px; }
     .posBtn:hover {
       background: lightblue;
       color: black; }
@@ -380,10 +246,10 @@ html, body {
 
   .rightSide {
     vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
+    display: block;
+    width: 100%;
+    height: 40%;
+    margin-left: 10px; }
 
   .records {
     height: 80%;
@@ -398,14 +264,15 @@ html, body {
 
   .loginForm {
     font-family: "Helvetica Neue";
-    width: 300px;
+    width: 39%;
+    height: 50%;
     margin: auto;
-    margin-top: 100px; }
+    margin-top: 50%; }
     .loginForm input {
       font-size: 16px;
       display: block;
       width: 96%;
-      height: 24px;
+      height: 41px;
       padding-left: 6px;
       margin-bottom: 10px; }
     .loginForm label {
@@ -414,11 +281,11 @@ html, body {
     .loginForm button {
       font-size: 16px;
       width: 100%;
-      padding: 10px;
-      background: blue;
+      padding: 15px;
+      background: #ADD8E6;
       border: none; }
       .loginForm button.createAccount {
-        border: 1px solid blue;
+        border: 1px solid #add8e6;
         background: none;
         margin-top: 10px; } }
 /* Landscape */
@@ -449,10 +316,10 @@ html, body {
 
   .rightSide {
     vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
+    display: block;
+    width: 100%;
+    height: 30%;
+    margin-left: 10px; }
 
   .records {
     height: 80%;
@@ -469,7 +336,7 @@ html, body {
     font-family: "Helvetica Neue";
     width: 300px;
     margin: auto;
-    margin-top: 100px; }
+    margin-top: 50%; }
     .loginForm input {
       font-size: 16px;
       display: block;
@@ -484,102 +351,31 @@ html, body {
       font-size: 16px;
       width: 100%;
       padding: 10px;
-      background: blue;
+      background: #ADD8E6;
       border: none; }
       .loginForm button.createAccount {
-        border: 1px solid blue;
+        border: 1px solid #add8e6;
         background: none;
         margin-top: 10px; } }
 /* ----------- iPhone 6 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  #map {
-    height: 50%;
-    width: 50%;
-    display: inline-block; }
-
-  .posBtn {
-    display: inline-block;
-    padding: 7px 15px;
-    background: rgba(173, 216, 230, 0.8);
-    border: none;
-    color: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    margin-left: 36%;
-    margin-top: 50px;
-    border-radius: 11px; }
-    .posBtn:hover {
-      background: lightblue;
-      color: black; }
-
-  .record {
-    padding: 10px; }
-    .record:nth-child(even) {
-      background: lightgrey; }
-
-  .rightSide {
-    vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
-
-  .records {
-    height: 80%;
-    overflow-y: scroll; }
-
-  .hidden {
-    display: none; }
-
-  .wrapper, .mapContainer {
-    width: 100%;
-    height: 100%; }
-
-  .loginForm {
-    font-family: "Helvetica Neue";
-    width: 300px;
-    margin: auto;
-    margin-top: 100px; }
-    .loginForm input {
-      font-size: 16px;
-      display: block;
-      width: 96%;
-      height: 24px;
-      padding-left: 6px;
-      margin-bottom: 10px; }
-    .loginForm label {
-      display: block;
-      width: 100%; }
-    .loginForm button {
-      font-size: 16px;
-      width: 100%;
-      padding: 10px;
-      background: blue;
-      border: none; }
-      .loginForm button.createAccount {
-        border: 1px solid blue;
-        background: none;
-        margin-top: 10px; } }
 /* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 568px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #map {
-    height: 50%;
-    width: 50%;
-    display: inline-block; }
+    height: 45%;
+    width: 100%;
+    display: block; }
 
   .posBtn {
     display: inline-block;
-    padding: 7px 15px;
+    padding: 46px 8px;
     background: rgba(173, 216, 230, 0.8);
     border: none;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    margin-left: 36%;
-    margin-top: 50px;
-    border-radius: 11px; }
-    .posBtn:hover {
-      background: lightblue;
-      color: black; }
+    margin-left: 0%;
+    margin-top: 10px;
+    border-radius: 11px;
+    height: 126px; }
 
   .record {
     padding: 10px; }
@@ -588,13 +384,13 @@ html, body {
 
   .rightSide {
     vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
+    display: block;
+    width: 75%;
+    height: 40%;
+    margin-left: 10%; }
 
   .records {
-    height: 80%;
+    height: 73%;
     overflow-y: scroll; }
 
   .hidden {
@@ -608,7 +404,7 @@ html, body {
     font-family: "Helvetica Neue";
     width: 300px;
     margin: auto;
-    margin-top: 100px; }
+    margin-top: 50%; }
     .loginForm input {
       font-size: 16px;
       display: block;
@@ -623,10 +419,10 @@ html, body {
       font-size: 16px;
       width: 100%;
       padding: 10px;
-      background: blue;
+      background: #add8e6;
       border: none; }
       .loginForm button.createAccount {
-        border: 1px solid blue;
+        border: 1px solid #add8e6;
         background: none;
         margin-top: 10px; } }
 /* Landscape */
@@ -692,84 +488,15 @@ html, body {
       font-size: 16px;
       width: 100%;
       padding: 10px;
-      background: blue;
+      background: #add8e6;
       border: none; }
       .loginForm button.createAccount {
-        border: 1px solid blue;
+        border: 1px solid #add8e6;
         background: none;
         margin-top: 10px; } }
 /* ----------- iPhone 6+ ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  #map {
-    height: 50%;
-    width: 50%;
-    display: inline-block; }
-
-  .posBtn {
-    display: inline-block;
-    padding: 7px 15px;
-    background: rgba(173, 216, 230, 0.8);
-    border: none;
-    color: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    margin-left: 36%;
-    margin-top: 50px;
-    border-radius: 11px; }
-    .posBtn:hover {
-      background: lightblue;
-      color: black; }
-
-  .record {
-    padding: 10px; }
-    .record:nth-child(even) {
-      background: lightgrey; }
-
-  .rightSide {
-    vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
-    margin-left: 20px; }
-
-  .records {
-    height: 80%;
-    overflow-y: scroll; }
-
-  .hidden {
-    display: none; }
-
-  .wrapper, .mapContainer {
-    width: 100%;
-    height: 100%; }
-
-  .loginForm {
-    font-family: "Helvetica Neue";
-    width: 300px;
-    margin: auto;
-    margin-top: 100px; }
-    .loginForm input {
-      font-size: 16px;
-      display: block;
-      width: 96%;
-      height: 24px;
-      padding-left: 6px;
-      margin-bottom: 10px; }
-    .loginForm label {
-      display: block;
-      width: 100%; }
-    .loginForm button {
-      font-size: 16px;
-      width: 100%;
-      padding: 10px;
-      background: blue;
-      border: none; }
-      .loginForm button.createAccount {
-        border: 1px solid blue;
-        background: none;
-        margin-top: 10px; } }
 /* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen and (min-device-width: 568px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   #map {
     height: 50%;
     width: 50%;
@@ -784,7 +511,8 @@ html, body {
     cursor: pointer;
     margin-left: 36%;
     margin-top: 50px;
-    border-radius: 11px; }
+    border-radius: 11px;
+    height: 126px; }
     .posBtn:hover {
       background: lightblue;
       color: black; }
@@ -796,9 +524,9 @@ html, body {
 
   .rightSide {
     vertical-align: top;
-    display: inline-block;
-    width: 360px;
-    height: 50%;
+    display: block;
+    width: 100%;
+    height: 40%;
     margin-left: 20px; }
 
   .records {
@@ -816,7 +544,7 @@ html, body {
     font-family: "Helvetica Neue";
     width: 300px;
     margin: auto;
-    margin-top: 100px; }
+    margin-top: 50%; }
     .loginForm input {
       font-size: 16px;
       display: block;
@@ -831,10 +559,10 @@ html, body {
       font-size: 16px;
       width: 100%;
       padding: 10px;
-      background: blue;
+      background: #add8e6;
       border: none; }
       .loginForm button.createAccount {
-        border: 1px solid blue;
+        border: 1px solid #add8e6;
         background: none;
         margin-top: 10px; } }
 /* Landscape */
@@ -900,10 +628,10 @@ html, body {
       font-size: 16px;
       width: 100%;
       padding: 10px;
-      background: blue;
+      background: #add8e6;
       border: none; }
       .loginForm button.createAccount {
-        border: 1px solid blue;
+        border: 1px solid #add8e6;
         background: none;
         margin-top: 10px; } }
 

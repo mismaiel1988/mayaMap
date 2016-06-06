@@ -86,93 +86,6 @@ html, body {
 
 /* ----------- iPhone 4 and 4S ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-	s#map {
-		height: 50%;
-		width: 50%;
-		display: inline-block;
-	}
-	.posBtn {
-		display: inline-block;
-		padding: 7px 15px;
-		background: rgba(173,216,230,.8);
-		border: none;
-		color: rgba(0,0,0,.8);
-		cursor: pointer;
-		margin-left: 36%;
-		margin-top: 50px;
-		border-radius: 11px;
-		&:hover {
-		background: rgba(173,216,230,1);
-		color: black;
-
-		}
-	}
-	.record {
-		padding: 10px;
-			&:nth-child(even){
-			background: lightgrey;
-		}
-	}
-	.rightSide {
-		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
-
-	}
-	.records{
-		height: 80%;
-		overflow-y: scroll;
-	}
-	.hidden {
-		display: none;
-	}
-	.wrapper, .mapContainer {
-		width: 100%;
-		height: 100%;
-	}
-
-	.loginForm{
-		font-family: "Helvetica Neue";
-		width: 300px;
-		margin: auto;
-		margin-top: 100px;
-		
-		& input{
-			font-size: 16px;
-			display: block;
-		    width: 96%;
-		    height: 24px;
-		    padding-left: 6px;
-		    margin-bottom: 10px;
-		}
-		& label{
-			display:block;
-			width: 100%;
-		}
-		& button{
-			font-size: 16px;
-			width: 100%;
-			padding: 10px;
-			background: blue;
-			border:none;
-			&.createAccount{
-				border: 1px solid blue;
-				background: none;
-				margin-top: 10px;
-			}
-		}
-
-	}
-}
-
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
@@ -180,18 +93,19 @@ html, body {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 	#map {
-		height: 50%;
-		width: 50%;
-		display: inline-block;
+		height: 45%;
+		width: 100%;
+		display: block;
 	}
 	.posBtn {
-		display: inline-block;
+		display: block;
 		padding: 7px 15px;
+		height: 126px;
 		background: rgba(173,216,230,.8);
 		border: none;
 		color: rgba(0,0,0,.8);
 		cursor: pointer;
-		margin-left: 36%;
+		margin-left: 0;
 		margin-top: 50px;
 		border-radius: 11px;
 		&:hover {
@@ -207,11 +121,11 @@ html, body {
 		}
 	}
 	.rightSide {
-		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
+	vertical-align: top;
+    display: block;
+    width: 100%;
+    height: 40%;
+    margin: 10px;
 
 	}
 	.records{
@@ -229,8 +143,9 @@ html, body {
 	.loginForm{
 		font-family: "Helvetica Neue";
 		width: 300px;
+		height: 50%;
 		margin: auto;
-		margin-top: 100px;
+		margin-top: 50%;;
 		
 		& input{
 			font-size: 16px;
@@ -248,10 +163,10 @@ html, body {
 			font-size: 16px;
 			width: 100%;
 			padding: 10px;
-			background: blue;
+			background: #add8e6;
 			border:none;
 			&.createAccount{
-				border: 1px solid blue;
+				border: 1px solid #add8e6;
 				background: none;
 				margin-top: 10px;
 			}
@@ -266,18 +181,19 @@ html, body {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 	#map {
-		height: 50%;
-		width: 50%;
-		display: inline-block;
+		height: 450%;
+		width: 100%;
+		display: block;
 	}
 	.posBtn {
-		display: inline-block;
+		display: block;
+		height: 126px;
 		padding: 7px 15px;
 		background: rgba(173,216,230,.8);
 		border: none;
 		color: rgba(0,0,0,.8);
 		cursor: pointer;
-		margin-left: 36%;
+		margin-left: 0;
 		margin-top: 50px;
 		border-radius: 11px;
 		&:hover {
@@ -294,10 +210,10 @@ html, body {
 	}
 	.rightSide {
 		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
+		display: block;
+		width: 100%;
+		height: 30%;
+		margin-left: 10px;
 
 	}
 	.records{
@@ -348,115 +264,29 @@ html, body {
 
 /* ----------- iPhone 5 and 5S ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-	#map {
-		height: 50%;
-		width: 50%;
-		display: inline-block;
-	}
-	.posBtn {
-		display: inline-block;
-		padding: 7px 15px;
-		background: rgba(173,216,230,.8);
-		border: none;
-		color: rgba(0,0,0,.8);
-		cursor: pointer;
-		margin-left: 36%;
-		margin-top: 50px;
-		border-radius: 11px;
-		&:hover {
-		background: rgba(173,216,230,1);
-		color: black;
-
-		}
-	}
-	.record {
-		padding: 10px;
-			&:nth-child(even){
-			background: lightgrey;
-		}
-	}
-	.rightSide {
-		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
-
-	}
-	.records{
-		height: 80%;
-		overflow-y: scroll;
-	}
-	.hidden {
-		display: none;
-	}
-	.wrapper, .mapContainer {
-		width: 100%;
-		height: 100%;
-	}
-
-	.loginForm{
-		font-family: "Helvetica Neue";
-		width: 300px;
-		margin: auto;
-		margin-top: 100px;
-		
-		& input{
-			font-size: 16px;
-			display: block;
-		    width: 96%;
-		    height: 24px;
-		    padding-left: 6px;
-		    margin-bottom: 10px;
-		}
-		& label{
-			display:block;
-			width: 100%;
-		}
-		& button{
-			font-size: 16px;
-			width: 100%;
-			padding: 10px;
-			background: blue;
-			border:none;
-			&.createAccount{
-				border: 1px solid blue;
-				background: none;
-				margin-top: 10px;
-			}
-		}
-	}
-
-}
-
 /* Portrait */
 @media only screen 
-  and (min-device-width: 320px) 
+  and (min-device-width: 481px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
 	#map {
-		height: 50%;
-		width: 50%;
-		display: inline-block;
+		height: 45%;
+		width: 100%;
+		display: block;
 	}
 	.posBtn {
-		display: inline-block;
+		display: block;
 		padding: 7px 15px;
 		background: rgba(173,216,230,.8);
 		border: none;
 		color: rgba(0,0,0,.8);
 		cursor: pointer;
-		margin-left: 36%;
+		margin-left: 0;
 		margin-top: 50px;
 		border-radius: 11px;
+		height: 126px;
 		&:hover {
 		background: rgba(173,216,230,1);
 		color: black;
@@ -471,10 +301,10 @@ html, body {
 	}
 	.rightSide {
 		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
+		display: block;
+		width: 100%;
+		height: 40%;
+		margin-left: 10px;
 
 	}
 	.records{
@@ -490,16 +320,17 @@ html, body {
 	}
 
 	.loginForm{
-		font-family: "Helvetica Neue";
-		width: 300px;
-		margin: auto;
-		margin-top: 100px;
+	font-family: "Helvetica Neue";
+    width: 39%;
+    height: 50%;
+    margin: auto;
+    margin-top: 50%;
 		
 		& input{
 			font-size: 16px;
 			display: block;
 		    width: 96%;
-		    height: 24px;
+		    height: 41px;
 		    padding-left: 6px;
 		    margin-bottom: 10px;
 		}
@@ -510,11 +341,11 @@ html, body {
 		& button{
 			font-size: 16px;
 			width: 100%;
-			padding: 10px;
-			background: blue;
+			padding: 15px;
+			background: #ADD8E6;
 			border:none;
 			&.createAccount{
-				border: 1px solid blue;
+				border: 1px solid #add8e6;
 				background: none;
 				margin-top: 10px;
 			}
@@ -557,10 +388,10 @@ html, body {
 	}
 	.rightSide {
 		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
+		display: block;
+		width: 100%;
+		height: 30%;
+		margin-left: 10px;
 
 	}
 	.records{
@@ -579,7 +410,7 @@ html, body {
 		font-family: "Helvetica Neue";
 		width: 300px;
 		margin: auto;
-		margin-top: 100px;
+		margin-top: 50%;
 		
 		& input{
 			font-size: 16px;
@@ -597,10 +428,10 @@ html, body {
 			font-size: 16px;
 			width: 100%;
 			padding: 10px;
-			background: blue;
+			background: #ADD8E6;
 			border:none;
 			&.createAccount{
-				border: 1px solid blue;
+				border: 1px solid #add8e6;
 				background: none;
 				margin-top: 10px;
 			}
@@ -611,117 +442,29 @@ html, body {
 
 /* ----------- iPhone 6 ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-	#map {
-		height: 50%;
-		width: 50%;
-		display: inline-block;
-	}
-	.posBtn {
-		display: inline-block;
-		padding: 7px 15px;
-		background: rgba(173,216,230,.8);
-		border: none;
-		color: rgba(0,0,0,.8);
-		cursor: pointer;
-		margin-left: 36%;
-		margin-top: 50px;
-		border-radius: 11px;
-		&:hover {
-		background: rgba(173,216,230,1);
-		color: black;
-
-		}
-	}
-	.record {
-		padding: 10px;
-			&:nth-child(even){
-			background: lightgrey;
-		}
-	}
-	.rightSide {
-		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
-
-	}
-	.records{
-		height: 80%;
-		overflow-y: scroll;
-	}
-	.hidden {
-		display: none;
-	}
-	.wrapper, .mapContainer {
-		width: 100%;
-		height: 100%;
-	}
-
-	.loginForm{
-		font-family: "Helvetica Neue";
-		width: 300px;
-		margin: auto;
-		margin-top: 100px;
-		
-		& input{
-			font-size: 16px;
-			display: block;
-		    width: 96%;
-		    height: 24px;
-		    padding-left: 6px;
-		    margin-bottom: 10px;
-		}
-		& label{
-			display:block;
-			width: 100%;
-		}
-		& button{
-			font-size: 16px;
-			width: 100%;
-			padding: 10px;
-			background: blue;
-			border:none;
-			&.createAccount{
-				border: 1px solid blue;
-				background: none;
-				margin-top: 10px;
-			}
-		}
-	}
-}
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 568px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
 	#map {
-		height: 50%;
-		width: 50%;
-		display: inline-block;
+		height: 45%;
+		width: 100%;
+		display: block;
 	}
 	.posBtn {
-		display: inline-block;
-		padding: 7px 15px;
-		background: rgba(173,216,230,.8);
-		border: none;
-		color: rgba(0,0,0,.8);
-		cursor: pointer;
-		margin-left: 36%;
-		margin-top: 50px;
-		border-radius: 11px;
-		&:hover {
-		background: rgba(173,216,230,1);
-		color: black;
-
-		}
+    display: inline-block;
+    padding: 46px 8px;
+    background: rgba(173, 216, 230, 0.8);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-left: 0%;
+    margin-top: 10px;
+    border-radius: 11px;
+    height: 126px;
 	}
 	.record {
 		padding: 10px;
@@ -731,15 +474,15 @@ html, body {
 	}
 	.rightSide {
 		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
+		display: block;
+		width: 75%;
+		height: 40%;
+		margin-left: 10%;
 
 	}
 	.records{
-		height: 80%;
-		overflow-y: scroll;
+	height: 73%;
+    overflow-y: scroll;
 	}
 	.hidden {
 		display: none;
@@ -753,7 +496,7 @@ html, body {
 		font-family: "Helvetica Neue";
 		width: 300px;
 		margin: auto;
-		margin-top: 100px;
+		margin-top: 50%;
 		
 		& input{
 			font-size: 16px;
@@ -771,10 +514,10 @@ html, body {
 			font-size: 16px;
 			width: 100%;
 			padding: 10px;
-			background: blue;
+			background: #add8e6;
 			border:none;
 			&.createAccount{
-				border: 1px solid blue;
+				border: 1px solid #add8e6;
 				background: none;
 				margin-top: 10px;
 			}
@@ -857,10 +600,10 @@ html, body {
 			font-size: 16px;
 			width: 100%;
 			padding: 10px;
-			background: blue;
+			background: #add8e6;
 			border:none;
 			&.createAccount{
-				border: 1px solid blue;
+				border: 1px solid #add8e6;
 				background: none;
 				margin-top: 10px;
 			}
@@ -869,94 +612,10 @@ html, body {
 }
 /* ----------- iPhone 6+ ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-	#map {
-		height: 50%;
-		width: 50%;
-		display: inline-block;
-	}
-	.posBtn {
-		display: inline-block;
-		padding: 7px 15px;
-		background: rgba(173,216,230,.8);
-		border: none;
-		color: rgba(0,0,0,.8);
-		cursor: pointer;
-		margin-left: 36%;
-		margin-top: 50px;
-		border-radius: 11px;
-		&:hover {
-		background: rgba(173,216,230,1);
-		color: black;
-
-		}
-	}
-	.record {
-		padding: 10px;
-			&:nth-child(even){
-			background: lightgrey;
-		}
-	}
-	.rightSide {
-		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
-		margin-left: 20px;
-
-	}
-	.records{
-		height: 80%;
-		overflow-y: scroll;
-	}
-	.hidden {
-		display: none;
-	}
-	.wrapper, .mapContainer {
-		width: 100%;
-		height: 100%;
-	}
-
-	.loginForm{
-		font-family: "Helvetica Neue";
-		width: 300px;
-		margin: auto;
-		margin-top: 100px;
-		
-		& input{
-			font-size: 16px;
-			display: block;
-		    width: 96%;
-		    height: 24px;
-		    padding-left: 6px;
-		    margin-bottom: 10px;
-		}
-		& label{
-			display:block;
-			width: 100%;
-		}
-		& button{
-			font-size: 16px;
-			width: 100%;
-			padding: 10px;
-			background: blue;
-			border:none;
-			&.createAccount{
-				border: 1px solid blue;
-				background: none;
-				margin-top: 10px;
-			}
-		}
-	}
-}
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 414px) 
+  and (min-device-width: 568px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
@@ -975,6 +634,7 @@ html, body {
 		margin-left: 36%;
 		margin-top: 50px;
 		border-radius: 11px;
+		height: 126px;
 		&:hover {
 		background: rgba(173,216,230,1);
 		color: black;
@@ -989,9 +649,9 @@ html, body {
 	}
 	.rightSide {
 		vertical-align: top;
-		display: inline-block;
-		width: 360px;
-		height: 50%;
+		display: block;
+		width: 100%;
+		height: 40%;
 		margin-left: 20px;
 
 	}
@@ -1011,7 +671,7 @@ html, body {
 		font-family: "Helvetica Neue";
 		width: 300px;
 		margin: auto;
-		margin-top: 100px;
+		margin-top: 50%;
 		
 		& input{
 			font-size: 16px;
@@ -1029,10 +689,10 @@ html, body {
 			font-size: 16px;
 			width: 100%;
 			padding: 10px;
-			background: blue;
+			background: #add8e6;
 			border:none;
 			&.createAccount{
-				border: 1px solid blue;
+				border: 1px solid #add8e6;
 				background: none;
 				margin-top: 10px;
 			}
@@ -1116,10 +776,10 @@ html, body {
 			font-size: 16px;
 			width: 100%;
 			padding: 10px;
-			background: blue;
+			background: #add8e6;
 			border:none;
 			&.createAccount{
-				border: 1px solid blue;
+				border: 1px solid #add8e6;
 				background: none;
 				margin-top: 10px;
 			}
