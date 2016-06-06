@@ -38,13 +38,14 @@ function initMap() {
 		  // Browser doesn't support Geolocation
 		  handleLocationError(false, infoWindow, map.getCenter());
 	}
-	//adding watchPosition
-	    navigator.geolocation.watchPosition(function(pos) {
+		//adding watchPosition
+	    navigator.geolocation.watchPosition(pos) {
 	    maximumAge: 1000,
 	    timeout: 300000,
   		enableHighAccuracy: true
-	  	});
+	  	};
 	//ending of watchPosition
+
 }
 
 
